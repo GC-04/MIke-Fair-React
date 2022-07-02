@@ -1,12 +1,13 @@
-$color-primary: #3046C5;
-$color-secondary: #5637dd;
-$color-pale: #CEC8FF;
-$color-mid: #901CAD;
-$color-dark: #60106b;
-$color-black-transparent: rgba(0, 0, 0, 0.5);
+$color-primary: #ff0000;
+$color-secondary: #950000;
+$color-pale: #f3f1ff;
+$color-mid: #494949;
+$color-dark: #f00000;
+$color-black-transparent: rgba(37, 37, 37, 0.5);
+$color-gray: #cacaca;
 
-$body-font: "Open Sans", sans-serif;
-$header-font: "Lobster", cursive;  
+$body-font: "Poppins", sans-serif;
+$header-font: "Avant", sans-serif;  
 
 body {
     font-family: $body-font;
@@ -31,18 +32,18 @@ footer {
     padding: 20px 0;
 }
 
+
 .jumbotron {
     margin: 0;
     padding: 30px;
-    background-image: linear-gradient(to 
-    right, $color-secondary, $color-primary, $color-dark);
+    background-image: linear-gradient(to-right, $color-secondary, $color-primary, $color-dark);
     color: white;
 }
 
 .row-content {
-    padding: 50px 0;
+    padding: 50px 10px 10px 50px;
     border-bottom: 1px ridge;
-    min-height: 200px;
+    min-height: 50px 10px 10px 50px;
 }
 
 .navbar-dark {
@@ -62,4 +63,22 @@ footer {
     right: 0;
     bottom: 0;
     z-index: 100;
+}
+
+#reserveModal {
+    .modal-header {
+        background-color: $color-gray;
+        color: white;
+    }
+}
+
+#loginModal {
+    .modal-header {
+        background-color: $color-mid;
+        color: white;
+    }
+}
+
+#ContactusGetquoteButton{
+    margin: 100px;
 }
